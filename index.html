@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Front End</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>GeansDen</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Jeans <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+     
+    </div>
+  </div>
+  <a href="" class="w3-bar-item w3-button w3-padding w3-hover-gray">Contact</a> 
+  <a href="" target="_blank"  class="w3-bar-item w3-button w3-padding w3-hover-gray">Follow</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-dark-gray w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">GeansDen</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">New Arival</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"  style="cursor:pointer"></i>
+      <i class="fa fa-search " style="cursor:pointer"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="cover.png" alt="cover" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+      <h1 class="w3-hide-small">COLLECTION 2022</h1>
+      <p><a href="#jeans" class="w3-button w3-dark-gray w3-padding-large w3-large">SHOP NOW</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="jean1.png" style="width:100%">
+        <p>Ripped Skinny Jeans<br><b>2999 PKR</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="jean2.png" style="width:100%">
+        <p>Mega Ripped Jeans<br><b>3000 PKR</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="jean3.png" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-dark-gray">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Mega Ripped Jeans<br><b>1500 PKR</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="jean4.png" style="width:100%">
+        <p>Washed Skinny Jeans<br><b>2000 PKR</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="jean5.png" style="width:100%">
+        <p>Washed Skinny Jeans<br><b>1999 PKR</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="jean9.webp" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-dark-gray">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Vintage Skinny Jeans<br><b class="w3-text-red">2500 PKR</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="jean7.png" style="width:100%">
+        <p>Vintage Skinny Jeans<br><b>3500 PKR</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="jean8.png" style="width:100%">
+        <p>Ripped Skinny Jeans<br><b>1200 PKR</b></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-dark-gray w3-padding-32">
+    <h1>Follow</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <a class="w3-button w3-cyan w3-margin-bottom" href="" target="_blank">Follow</a>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/"  method="POST">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-dark-gray">Send</button>
+        </form>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="w3-dark-gray w3-center w3-padding-24">All rights are reserved by HaiWolf777</a></div>
+
+</div>
+
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
